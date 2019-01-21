@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django Level Two Project!</title>
+  </head>
+  <body>
+    <h1>Here are your users:</h1>
+    <div class="">
+      {% for abc in user_list %}
+        <ol>
+          <li>
+            User Info:
+            <ul>
+              <li>First Name: {{ abc.first_name }}</li>
+              <li>Last Name: {{ abc.last_name }}</li>
+              <li>E-mail: {{ abc.email }}</li>
+            </ul>
+          </li>
+        </ol>
+      {% endfor %}
+    </div>
+  </body>
+</html>
